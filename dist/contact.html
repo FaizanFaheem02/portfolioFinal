@@ -39,9 +39,9 @@
         <div class="content">
           <h1 class="section-title">Kontakt</h1>
           <div class="contact-content">
-            <form action="http://henriquecarvalho.me" method="POST" data-netlify= "true" data-netlify-recaptcha="true">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
               <div class="name">
-                <input class="boxShadow" type="text" name="name" id="name" placeholder="Name *" required="">
+                <input class="boxShadow" type="text" name="name" id="name" placeholder="Name *">
               </div>
               <div class="subject">
                 <input class="boxShadow" type="text" name="subject" id="subject" placeholder="Thema *" required="">
@@ -53,11 +53,12 @@
                 <textarea class="boxShadow" id="message" name="message" placeholder="Nachricht *" required=""></textarea>
                 <label id="counter"></label>
               </div>
+            </form>
               <div class="my-2">
                 <div data-netlify-recaptcha="true"></div>
               </div>
               <input type="submit" value="Submit" class="submit">
-            </form>
+            
           </div>
         </div>
 
